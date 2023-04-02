@@ -1,5 +1,6 @@
 import "./styles/main.css";
 
+import logo from "./img/icons/logo.png";
 import sun from "./img/icons/sun.svg";
 import moon from "./img/icons/moon.svg";
 import telegram from "./img/icons/telegram.svg";
@@ -13,11 +14,11 @@ function App() {
       <nav className="nav">
         <div className="container">
           <div className="nav-row">
-            <a href="./index.html" className="logo">
-              <strong>IT English </strong> <br />
-              All Over The World
-            </a>
-
+            <div className="logo">
+              <a href="#!">
+                <img src={logo} alt="logo" />
+              </a>
+            </div>
             <button className="dark-mode-btn">
               <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
               <img src={moon} alt="Dark mode" className="dark-mode-btn__icon" />
@@ -108,8 +109,17 @@ function App() {
               </li>
             </ul>
             <div className="copyright">
-              <p>© 2023 IT English All Over The World</p>
+              <a href="#!" className="logo">
+                <strong>IT English </strong> <br />
+                All Over The World</a>
+              
+              <p>© 2023</p>
             </div>
+            {/* <div className="logo">
+              <a href="#!">
+                <img src={logo} alt="logo" />
+              </a>
+            </div> */}
           </div>
         </div>
       </footer>

@@ -4,7 +4,7 @@
 :root {
 	/* Colors */
 	--blackpure: #000;
-	--black: #171718;
+	--black: #444444;
 	--black-border: #26292d;
 	--white: #fff;
 	--purple: #5c62ec;
@@ -114,9 +114,9 @@ body {
 
 .logo {
 	margin-right: auto;
-	color: var(--nav-text);
+	/* color: var(--nav-text);
 	font-size: 24px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif; */
 }
 
 .logo strong {
