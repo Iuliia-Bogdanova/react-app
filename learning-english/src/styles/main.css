@@ -6,8 +6,8 @@
 	--blackpure: #000;
 	--black: #444444;
 	--black-border: #26292d;
-	--white: #fff;
-	--purple: #5c62ec;
+	--white: #dddddd;
+	--purple: #7bb0a6;
 
 	/* Nav */
 	--nav-bg: var(--black);
@@ -59,6 +59,22 @@ body {
 	color: var(--text-color);
 }
 
+body::-webkit-scrollbar {
+	background-color: transparent;
+    height: .5rem;
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 2px;
+    border: .1rem solid var(--black);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--black);
+}
+
 /* General */
 
 .container {
@@ -72,7 +88,7 @@ body {
 } */
 
 .section {
-	padding: 70px 0;
+	padding: 40px 0;
 }
 
 .title-1 {
@@ -86,9 +102,9 @@ body {
 }
 
 .title-2 {
-	margin-bottom: 20px;
+	margin: 20px 0;
 
-	font-size: 40px;
+	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.3;
 }
@@ -96,9 +112,13 @@ body {
 /* Nav */
 
 .nav {
+	position: sticky; 
+    top: 0;
+    z-index: 2;
 	padding: 20px 0;
 	background-color: var(--nav-bg);
-	border-bottom: 1px solid var(--nav-border);
+	opacity: 0.99;
+	box-shadow: 0px 0px 30px 30px var(--white);
 	color: var(--nav-text);
 	letter-spacing: normal;
 }
@@ -114,13 +134,12 @@ body {
 
 .logo {
 	margin-right: auto;
-	/* color: var(--nav-text);
-	font-size: 24px;
-	font-family: 'Poppins', sans-serif; */
 }
 
-.logo strong {
-	font-weight: 700;
+.logo:hover,
+.logo-footer:hover {
+    transform: scale(1.03);
+	transition: all 0.3s ease;
 }
 
 .nav-list {
@@ -129,7 +148,7 @@ body {
 	row-gap: 10px;
 	align-items: center;
 	column-gap: 40px;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 500;
 	font-family: 'Poppins', sans-serif;
 }
@@ -140,7 +159,7 @@ body {
 }
 
 .nav-list__link:hover {
-	opacity: 0.8;
+	/* opacity: 0.8; */
 }
 
 .nav-list__link--active {
@@ -158,6 +177,12 @@ body {
 	height: 2px;
 	width: 100%;
 	background-color: var(--accent);
+}
+
+.nav-list__item:hover {
+	filter: brightness(170%);
+    transform: scale(1.05);
+	transition: all 0.3s ease;	
 }
 
 /* Dark mode btn */
@@ -278,6 +303,8 @@ body {
 
 .btn:hover {
 	opacity: 0.8;
+	transform: scale(1.03);
+	transition: all 0.3s ease;
 }
 
 .btn:active {
@@ -374,7 +401,7 @@ body {
 
 .content-list {
 	margin: 0 auto;
-	max-width: 570px;
+	max-width: 870px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -399,7 +426,7 @@ body {
 
 .footer {
 	margin-top: auto;
-	padding: 60px 0 50px;
+	padding: 50px 0 50px;
 	background-color: var(--footer-bg);
 	color: var(--footer-text);
 }
@@ -413,8 +440,14 @@ body {
 
 .social {
 	display: flex;
-	column-gap: 30px;
+	column-gap: 40px;
 	align-items: center;
+}
+
+.social__item:hover {
+	filter: brightness(170%);
+    transform: scale(1.05);
+	transition: all 0.3s ease;
 }
 
 .copyright {

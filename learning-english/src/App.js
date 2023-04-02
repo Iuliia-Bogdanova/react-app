@@ -35,12 +35,12 @@ function App() {
               </li>
               <li className="nav-list__item">
                 <a href="./projects.html" className="nav-list__link">
-                  Cards
+                  Words
                 </a>
               </li>
               <li className="nav-list__item">
                 <a href="./contacts.html" className="nav-list__link">
-                  Contacts
+                  Flashcards
                 </a>
               </li>
             </ul>
@@ -64,21 +64,33 @@ function App() {
 
       <main className="section">
         <div className="container">
-          <ul className="content-list">
-            {/* <li className="content-list__item">
-              <h2 className="title-2">Frontend</h2>
+          <div className="content-list">
+            <div className="content-list__item">
+              <h2 className="title-2">Welcome to our app!</h2>
+              <h2 className="title-2">Here you will find the necessary tools to help you master programming terminology in English.</h2>
               <p>
-                JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM,
-                BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
+                We offer a wide range of flashcards that cover everything from
+                basic programming concepts to advanced terms. Our flashcards are
+                designed to help you learn quickly and efficiently, so you can
+                start using your new knowledge in your coding projects right
+                away.
               </p>
-            </li>
-            <li className="content-list__item">
-              <h2 className="title-2">Backend</h2>
-              <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
-            </li> */}
-          </ul>
+              <p>
+                Our flashcards are perfect for both beginners and experienced
+                programmers who want to improve their English skills. You can
+                use them to study at your own pace, or as part of a group study
+                session.
+              </p>
+              <h2 className="title-2">
+                Improve your programming skills in English!
+              </h2>
+              <h2 className="title-2">
+                Start mastering programming terminology like a pro!
+              </h2>
+            </div>
+          </div>
           <a href="#!" className="btn">
-            Download Card
+            Open Cards
           </a>
         </div>
       </main>
@@ -86,6 +98,11 @@ function App() {
       <footer className="footer">
         <div className="container">
           <div className="footer__wrapper">
+            <div className="logo-footer">
+              <a href="#!">
+                <img src={logo} alt="logo" />
+              </a>
+            </div>
             <ul className="social">
               <li className="social__item">
                 <a href="#!">
@@ -109,17 +126,8 @@ function App() {
               </li>
             </ul>
             <div className="copyright">
-              <a href="#!" className="logo">
-                <strong>IT English </strong> <br />
-                All Over The World</a>
-              
-              <p>© 2023</p>
+              <p>© 2023 Created by Iuliia Bogdanova</p>
             </div>
-            {/* <div className="logo">
-              <a href="#!">
-                <img src={logo} alt="logo" />
-              </a>
-            </div> */}
           </div>
         </div>
       </footer>
