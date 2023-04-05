@@ -3,7 +3,7 @@ import "./styles/main.css";
 import logo from "./img/icons/logo.png";
 import sun from "./img/icons/sun.svg";
 import moon from "./img/icons/moon.svg";
-import telegram from "./img/icons/telegram.svg";
+import telegram from "./img/icons/Vector.svg";
 import instagram from "./img/icons/instagram.svg";
 import gitHub from "./img/icons/gitHub.svg";
 import linkedIn from "./img/icons/linkedIn.svg";
@@ -106,12 +106,12 @@ function App() {
             <ul className="social">
               <li className="social__item">
                 <a href="#!">
-                  <img src={telegram} alt="Link" />
+                  <img src={instagram} alt="Link" />
                 </a>
               </li>
               <li className="social__item">
                 <a href="#!">
-                  <img src={instagram} alt="Link" />
+                  <img src={telegram} alt="Link" />
                 </a>
               </li>
               <li className="social__item">
