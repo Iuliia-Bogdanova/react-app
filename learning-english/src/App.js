@@ -11,63 +11,63 @@ import linkedIn from "./img/icons/linkedIn.svg";
 function App() {
   return (
     <div className="App">
-      <nav className="nav">
-        <div className="container">
-          <div className="nav-row">
-            <div className="logo">
-              <a href="#!">
-                <img src={logo} alt="logo" />
-              </a>
+      
+      <header className="header">
+        <nav className="nav">
+          <div className="container">
+            <div className="nav-row">
+              <div className="logo">
+                <a href="#!">
+                  <img src={logo} alt="logo" />
+                </a>
+              </div>
+              <button className="dark-mode-btn">
+                <img
+                  src={sun}
+                  alt="Light mode"
+                  className="dark-mode-btn__icon"
+                />
+                <img
+                  src={moon}
+                  alt="Dark mode"
+                  className="dark-mode-btn__icon"
+                />
+              </button>
+
+              <ul className="nav-list">
+                <li className="nav-list__item">
+                  <a
+                    href="./index.html"
+                    className="nav-list__link nav-list__link--active"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="nav-list__item">
+                  <a href="./projects.html" className="nav-list__link">
+                    Words
+                  </a>
+                </li>
+                <li className="nav-list__item">
+                  <a href="./contacts.html" className="nav-list__link">
+                    Flashcards
+                  </a>
+                </li>
+              </ul>
             </div>
-            <button className="dark-mode-btn">
-              <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
-              <img src={moon} alt="Dark mode" className="dark-mode-btn__icon" />
-            </button>
-
-            <ul className="nav-list">
-              <li className="nav-list__item">
-                <a
-                  href="./index.html"
-                  className="nav-list__link nav-list__link--active"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-list__item">
-                <a href="./projects.html" className="nav-list__link">
-                  Words
-                </a>
-              </li>
-              <li className="nav-list__item">
-                <a href="./contacts.html" className="nav-list__link">
-                  Flashcards
-                </a>
-              </li>
-            </ul>
           </div>
-        </div>
-      </nav>
-
-      {/* <header className="header">
-        <div className="header__wrapper">
-          <h1 className="header__title">
-            <strong>
-              Hi, my name is <em>Yuri</em>
-            </strong>
-            <br />a frontend developer
-          </h1>
-          <div className="header__text">
-            <p>with passion for learning and creating.</p>
-          </div>
-        </div>
-      </header> */}
+        </nav>
+      </header>
 
       <main className="section">
         <div className="container">
           <div className="content-list">
             <div className="content-list__item">
               <h2 className="title-2">Welcome to our app!</h2>
-              <h2 className="title-2">Here you will find the necessary tools to help you master programming terminology in English.</h2>
+              <h2 className="title-2">
+                Here you will find the necessary tools to help you master
+                programming terminology in English.
+              </h2>
               <p>
                 We offer a wide range of flashcards that cover everything from
                 basic programming concepts to advanced terms. Our flashcards are
@@ -131,6 +131,7 @@ function App() {
           </div>
         </div>
       </footer>
+    
     </div>
   );
 }
