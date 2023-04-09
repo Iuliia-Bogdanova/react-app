@@ -1,0 +1,33 @@
+.footer {
+	margin-top: auto;
+	padding: 40px 0 50px;
+	background-color: var(--footer-bg);
+	color: var(--footer-text);
+}
+
+.footer__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 27px;
+}
+
+.social {
+	display: flex;
+	column-gap: 40px;
+	align-items: center;
+}
+
+.social__item:hover {
+	filter: brightness(170%);
+    transform: scale(1.05);
+	transition: all 0.3s ease;
+}
+
+.copyright {
+	font-size: 16px;
+}
+
+.copyright p + p {
+	margin-top: 0.5em;
+}
