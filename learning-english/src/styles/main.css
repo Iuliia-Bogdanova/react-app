@@ -117,7 +117,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* Nav */
 
 .nav {
-	position: sticky; 
+	/* position: sticky; 
     top: 0;
     z-index: 2;
 	padding: 20px 0;
@@ -125,13 +125,13 @@ body::-webkit-scrollbar-thumb:hover {
 	opacity: 0.99;
 	box-shadow: 0px 0px 30px 30px var(--white);
 	color: var(--nav-text);
-	letter-spacing: normal;
+	letter-spacing: normal; */
 	/* border-bottom: {
 		filter: blur(10px);
 	} */
 }
 
-.nav-row {
+/* .nav-row {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -164,13 +164,13 @@ body::-webkit-scrollbar-thumb:hover {
 .nav-list__link {
 	color: var(--nav-text);
 	transition: opacity 0.2s ease-in;
-}
+} */
 
 /* .nav-list__link:hover {
 	opacity: 0.8;
 } */
 
-.nav-list__link--active {
+/* .nav-list__link--active {
 	position: relative;
 }
 
@@ -189,11 +189,11 @@ body::-webkit-scrollbar-thumb:hover {
 	filter: brightness(170%);
     transform: scale(1.05);
 	transition: all 0.3s ease;	
-}
+} */
 
 /* Dark mode btn */
 
-.dark-mode-btn {
+/* .dark-mode-btn {
 	order: 9;
 	position: relative;
 	display: flex;
@@ -225,7 +225,7 @@ body::-webkit-scrollbar-thumb:hover {
 .dark-mode-btn__icon {
 	position: relative;
 	z-index: 9;
-}
+} */
 
 /* Words */
 
@@ -338,7 +338,7 @@ input {
 
 /* Footer */
 
-.footer {
+/* .footer {
 	margin-top: auto;
 	padding: 40px 0 50px;
 	background-color: var(--footer-bg);
@@ -370,7 +370,7 @@ input {
 
 .copyright p + p {
 	margin-top: 0.5em;
-}
+} */
 
 @media (max-width: 620px) {
 		/* Nav */

@@ -1,4 +1,4 @@
-// import st from "./style.module.css";
+import st from "./style.css";
 
 import logo from "./../../img/icons/logo.png";
 import telegram from "./../../img/icons/Vector.svg";

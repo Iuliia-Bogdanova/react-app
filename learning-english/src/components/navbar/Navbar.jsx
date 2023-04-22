@@ -1,4 +1,4 @@
-// import "./style.module.css";
+import "./style.css";
 
 import logo from "./../../img/icons/logo.png";
 import sun from "./../../img/icons/sun.svg";
